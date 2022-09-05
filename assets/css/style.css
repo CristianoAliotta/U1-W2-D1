@@ -65,7 +65,7 @@ header nav ul {
 header nav li {
   list-style: none;
   display: inline-block;
-  margin-right: 10px;
+  /* margin-right: 10px; */
 }
 header nav li:last-child {
   margin-right: 0;
@@ -243,25 +243,97 @@ footer a {
 }
 
 @media screen and (min-width: 768px) {
+  header img {
+    float: left;
+    margin-top: 2.5vh;
+  }
+  header {
+    height: 16rem;
+  }
+  nav {
+    float: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  header nav li a::before {
+    content: none;
+  }
+  header ul {
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    list-style: none;
+  }
   aside div {
     display: inline-block;
     width: 32.9%;
   }
   iframe {
-    width: 49%;
-    display: inline-block;
+    width: 39%;
   }
   section {
-    width: 49%;
-    display: inline-block;
+    width: 59%;
   }
   #gomamon {
     display: flex;
     justify-content: space-around;
-    align-items:center;
+    align-items: center;
   }
   table {
     max-width: 32.9;
     margin: 0 auto;
-    margin-bottom: 5vh;  
+    margin-bottom: 5vh;
   }
+}
+
+@media screen and (min-width: 1024px) {
+  main {
+    font-size: 2rem;
+  }
+  header img {
+    float: left;
+    margin-top: 2.5vh;
+  }
+  header {
+    height: 16rem;
+  }
+  nav {
+    float: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  header nav li a::before {
+    content: none;
+  }
+  header ul {
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    list-style: none;
+  }
+  aside div {
+    display: inline-block;
+    width: 32.9%;
+    font-size: smaller;
+  }
+  iframe {
+    width: 29%;
+  }
+  section {
+    width: 59%;
+  }
+  #gomamon {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  table {
+    max-width: 32.9;
+    margin: 0 auto;
+    margin-bottom: 5vh;
+  }
+}
