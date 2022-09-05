@@ -337,3 +337,31 @@ footer a {
     margin-bottom: 5vh;
   }
 }
+
+@media print {
+  header {
+    display: none;
+  }
+  aside {
+    display: none;
+  }
+  footer {
+    display: none;
+  }
+  #aiuto {
+    display: none;
+  }
+  .social {
+    display: none;
+  }
+  .toTop {
+    display: none;
+  }
+  main {
+    box-shadow: none;
+  }
+  body {
+    font-size: 2.2rem;
+    line-height: 1.55;
+  }
+}
